@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Linking external CSS file-->
+    <link rel="stylesheet" href="dashboard.css">
+    <!--Using Unicons-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+
+
+    <title>Shelter – Dashboard</title>
+    <link rel="shortcut icon" href="shelter.ico"> <!--For adding the logo to the browser tab-->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="p-2">
+                        <img src="shelter.png" id="logo">
+                    </p>
+                </div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col"></div>
+                <div class="col">
+                    <p class="pl-sm-5"></p>
+                    <p class="pl-sm-5">
+                        <button type="submit" class="btn btn-primary" id="logout">Logout</button>
+                    </p>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3 search">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="basic-addon1"><i class="uil uil-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search for a city" id="search"> &nbsp; 
+                        <button type="button" class="btn btn-dark">Search</button>
+                      </div>
+                </div>
+            </div> 
+            <br>
+            <ul type="none">
+                <li>
+                    <div class="row">
+                        <div class="card">
+                            <div class="card inner">
+
+                            </div>
+                            <h4>Pune</h4>
+                            <h5>Maharashtra</h5>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="card">
+                            <div class="card inner">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="row">
+                        <div class="card">
+                            <div class="card inner">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <p>Made with <i class="uil uil-heart"></i> by Team Shelter</p>
+            </div>
+        </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBQOAl8ov1h5iJ3b7f-9JoxVEqfzeZEjuc",
+            authDomain: "shelter-f9412.firebaseapp.com",
+            databaseURL: "https://shelter-f9412.firebaseio.com",
+            projectId: "shelter-f9412",
+            storageBucket: "shelter-f9412.appspot.com",
+            messagingSenderId: "357781636269",
+            appId: "1:357781636269:web:34eed48ccec60071703224",
+            measurementId: "G-45VHGHPSEE"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+
+        const auth = firebase.auth();
+        const dbb = firebase.database();
+        const db = firebase.firestore();
+
+        </script>
+        <script src="dashboard.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
+
