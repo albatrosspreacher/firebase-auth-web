@@ -5,7 +5,7 @@ A prototype for *Shelter*, a web application that allows you to rent a house.
 
 **1. Clone the repository**
 
-```git clone```
+```git clone https://github.com/nandiniproothi/firebase-auth-web.git```
 
 **2. Edit the html files and add your Firebase project login credentials**
 
